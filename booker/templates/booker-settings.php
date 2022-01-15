@@ -167,7 +167,7 @@ $posts = get_pages();
 
 <script>
 function setUp() {
-	document.getElementById("Upload").addEventListener("click", function(e) {onClickMedia(e);});
+	document.getElementById("Upload").addEventListener("click", onClickMedia, false);
 }
 function onClickMedia(event) {
 	event.preventDefault();
